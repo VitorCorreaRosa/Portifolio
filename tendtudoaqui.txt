@@ -1,0 +1,23 @@
+#353535
+#3c6e71
+#ffffff
+#d9d9d9
+#284b63
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+
+Utilizar o padrão de nomenclatura BEM (Block, Element, Modifier) para nome de classes. Isso ajuda na manutenção e organização do código.
+
+Agrupar as definições de variáveis de acordo com sua semântica. Por exemplo, as cores podem ser agrupadas em uma seção, enquanto as fontes podem ser agrupadas em outra.
+
+Utilizar o @mixin para a definição de fontes. Isso permitirá que as fontes possam ser facilmente reutilizadas em diferentes partes do código.
+
+Utilizar o @extend para aplicar estilos comuns a elementos semelhantes. Isso evita a repetição de código e facilita a manutenção.
+
+Utilizar o @each para aplicar estilos a elementos que compartilham características semelhantes. Por exemplo, se você tiver vários botões com cores diferentes, pode utilizar o @each para aplicar a mesma estilização a todos eles.
+
+
+  // estilos comuns a todos elementos
+  @extend *;
+  @include font-style($fonts['gruppo'], $sizes['normal'], 'bold');

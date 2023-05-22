@@ -1,0 +1,77 @@
+// Definição de variáveis, importações, mixin e funções
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
+$crayola: #f5cb5c;
+$jet: #353535;
+$lightSilver: #d9d9d9;
+$policeBlue: #284b63;
+
+$crimson: 'Crimson Text', serif;
+$gruppo: 'Gruppo', cursive;
+
+$normalFont: 1.6rem;
+$smalFont: 1.4rem;
+$bigFont: 2rem;
+$mediumFont: 1.8rem;
+
+* {
+    // configurações globais dentro da aplicação (elemento pai de todos)
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+
+    font: {
+        size: 62.5%; /* define que 1rem = 10px (ajuda na responsividade e para usuários que tenha
+                        problemas de vista. :)  */
+        family: '$crimson'; 
+        style: none;
+    }
+    
+    color: #000;
+    line-height: 1.5;
+    text-decoration: none; 
+    list-style: none; 
+
+}
+div#aviso {
+    width: 25rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    h2 {
+        font-size: $bigFont;
+        text-transform: uppercase;
+        font-size: $bigFont;
+        color: #ff0000;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: $normalFont;
+        span {
+            font-size: $normalFont;
+        }
+    }
+}
+
+img {
+    width: 50rem;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#icones {
+    a {
+        span {
+        font-size: $mediumFont;
+        }
+    }
+}
