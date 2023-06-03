@@ -7,8 +7,8 @@ $jet: #353535;
 $lightSilver: #d9d9d9;
 $policeBlue: #284b63;
 
-$crimson: 'Crimson Text', serif;
-$gruppo: 'Gruppo', cursive;
+$crimson: 'Crimson Text', serif; //normal
+$gruppo: 'Gruppo', cursive; //titluo
 
 $normalFont: 1.6rem;
 $smalFont: 1.4rem;
@@ -34,44 +34,54 @@ $mediumFont: 1.8rem;
     list-style: none; 
 
 }
-div#aviso {
-    width: 25rem;
-    height: 10rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 5rem;
-    margin-left: auto;
-    margin-right: auto;
 
-    h2 {
-        font-size: $bigFont;
-        text-transform: uppercase;
-        font-size: $bigFont;
-        color: #ff0000;
-        font-weight: bold;
+header {
+    background: {
+        color: $jet;
+    }
+    nav#navHeader {
+
+    a#title {
+        &::first-letter {
+            color: $lightSilver;
+        }
+
+        span {
+            font: {
+                size: $mediumFont;
+                family: $gruppo;
+                weight: bold;
+            }
+            
+            padding: {
+                right: .5rem;
+            }
+
+            color: $crayola;
+            letter-spacing: .1rem;
+        }
     }
 
-    p {
-        font-size: $normalFont;
-        span {
-            font-size: $normalFont;
+    div#navbarNav {
+        ul {
+            li {
+                a {
+                    font: {
+                        size: $normalFont;
+                    }
+                    span {
+                        font: {
+                            size: $normalFont;
+                        }
+
+                    }
+
+                    &:hover {
+                        color: $crayola;
+                    }
+                }
+            }
         }
     }
 }
-
-img {
-    width: 50rem;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-div#icones {
-    a {
-        span {
-        font-size: $mediumFont;
-        }
-    }
 }
