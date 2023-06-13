@@ -35,11 +35,23 @@ $mediumFont: 1.8rem;
 
 }
 
+@mixin personalContainer {
+    /* adiciona um pequeno padding pq o do bottstrap
+    é gigante e não tem uma forma melhor de arrumar a nao
+    ser essa :-)
+    */
+    padding: {
+        left: 2rem;
+        right: 2rem;
+    }
+}
+
 header {
+    @include personalContainer();
     background: {
         color: $jet;
     }
-    nav#navHeader {
+    nav#navHeader {  
 
     a#title {
         &::first-letter {
