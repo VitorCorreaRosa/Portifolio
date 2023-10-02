@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Montserrat&display=swap");
+
+$textFont: "Bitter", serif;
+$titlesFont: "Montserrat", sans-serif;
+
+$titleSize: 2rem;
+$mediumTextSize: 1.7rem;
+$normalTextSize: 1.6rem;
+$smallTextSize: 1.4rem;
+
+$colorJet: #353535;
+$colorPeaBody: #3c6e71;
+$colorOrochimaru: #d9d9d9;
+$colorDeepOcean: #284b63;
+$colorSlayerOrange: #f49e4c;
+$colorRooibosTea: #ab3428;
+
+@mixin definirNome() {
+  width: 100vh;
+  height: 100vh;
+}
+
+@mixin topBottPadding() {
+  padding: {
+    top: 3rem;
+    bottom: 3rem;
+  }
+}
+
+@mixin centralizaElemento() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font: {
+    size: 62.5%;
+    family: $textFont;
+  }
+}
+
+nav,
+header {
+  background: {
+    color: $colorJet;
+  }
+}
+
+header {
+  nav {
+    h1#vitorCorrea {
+      color: $colorOrochimaru;
+
+      font: {
+        size: $titleSize;
+        family: $titlesFont;
+      }
+
+      span {
+        color: $colorSlayerOrange;
+
+        font: {
+          size: $titleSize;
+        }
+      }
+
+      span:first-child {
+        color: $colorRooibosTea;
+      }
+    }
+
+    div {
+      ul {
+        li {
+          a {
+            color: $colorOrochimaru;
+
+            font: {
+              size: $normalTextSize;
+            }
+
+            span {
+              font: {
+                size: $normalTextSize;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  section#projetos,
+  section#sobre,
+  section#contato {
+    @include definirNome();
+  }
+
+  section#home {
+    div#descDiv {
+      //@include topBottPadding();
+      @include centralizaElemento();
+
+      div#apresentacao {
+        width: 30rem;
+        height: 20rem;
+        columns: auto 30rem;
+
+        h2 {
+          font: {
+            size: $titleSize;
+            weight: bold;
+            family: $titlesFont;
+          }
+
+          span {
+            color: $colorRooibosTea;
+
+            font: {
+              size: $normalTextSize;
+              weigh: bold;
+              family: $titlesFont;
+            }
+          }
+
+          a {
+            font: {
+              size: $normalTextSize;
+            }
+          }
+        }
+
+        p {
+          font: {
+            size: $normalTextSize;
+            style: italic;
+          }
+        }
+      }
+    }
+
+    div#imgDesCont {
+      img {
+        width: 50rem;
+        height: 40rem;
+      }
+    }
+
+    div#prinProjects {
+      width: 40rem;
+      margin-top: -15rem;
+      border-radius: 0 5rem 0 5rem;
+
+      background: {
+        color: $colorPeaBody;
+      }
+
+      div#title {
+        h2 {
+          color: $colorOrochimaru;
+
+          padding: {
+            top: 1rem;
+            left: 1rem;
+          }
+
+          font: {
+            size: $normalTextSize;
+            weight: bold;
+          }
+        }
+      }
+
+      div#carouselExampleIndicators {
+        ol {
+          li {
+            font: {
+              size: $normalTextSize;
+            }
+          }
+        }
+
+        div.carousel-caption {
+          opacity: 0.95;
+
+          background: {
+            color: $colorJet;
+          }
+
+          h5 {
+            color: $colorSlayerOrange;
+
+            font: {
+              size: $mediumTextSize;
+              family: $titlesFont;
+            }
+          }
+
+          p {
+            color: $colorSlayerOrange;
+
+            font: {
+              size: $smallTextSize;
+              style: italic;
+            }
+          }
+        }
+
+        a.carousel-control-prev {
+          span.carousel-control-prev-icon {
+            font: {
+              size: $normalTextSize;
+            }
+
+            background: {
+              color: $colorRooibosTea;
+            }
+          }
+        }
+
+        a.carousel-control-next {
+          span.carousel-control-next-icon {
+            font: {
+              size: $normalTextSize;
+            }
+
+            background: {
+              color: $colorRooibosTea;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  height: 5vh;
+
+  background: {
+    color: $colorJet;
+  }
+
+  p#footerText {
+    color: $colorOrochimaru;
+    @include centralizaElemento();
+
+    font: {
+      size: $normalTextSize;
+    }
+  }
+}
+
+.scroll-to-top {
+  width: 5rem;
+  height: 5rem;
+  background-color: $colorRooibosTea;
+  color: #fff;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.scroll-to-top i {
+  font-size: 2.4rem;
+}
+
+.show-scroll {
+  display: block;
+  @include centralizaElemento();
+}
+
+// Desktop
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  body {
+    background: red;
+  }
+}
+
+// laptop
+@media screen and (min-width: 1024px) and (max-width: 769px) {
+  body {
+    background: greenyellow;
+  }
+}
+
+// tablet/ipad
+@media screen and (min-width: 768px) and (max-width: 481px) {
+  body {
+    background: blueviolet;
+  }
+}
+
+// mobile
+@media screen and (min-width: 480px) and (max-width: 320px) {
+  body {
+    background: fuchsia;
+  }
+}

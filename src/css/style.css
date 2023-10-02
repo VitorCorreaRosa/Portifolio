@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Bitter", serif;
+}
+
+nav,
+header {
+  background-color: #353535;
+}
+
+header nav h1#vitorCorrea {
+  color: #d9d9d9;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+header nav h1#vitorCorrea span {
+  color: #f49e4c;
+  font-size: 2rem;
+}
+header nav h1#vitorCorrea span:first-child {
+  color: #ab3428;
+}
+header nav div ul li a {
+  color: #d9d9d9;
+  font-size: 1.6rem;
+}
+header nav div ul li a span {
+  font-size: 1.6rem;
+}
+
+main section#projetos,
+main section#sobre,
+main section#contato {
+  width: 100vh;
+  height: 100vh;
+}
+main section#home div#descDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section#home div#descDiv div#apresentacao {
+  width: 30rem;
+  height: 20rem;
+  columns: auto 30rem;
+}
+main section#home div#descDiv div#apresentacao h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+main section#home div#descDiv div#apresentacao h2 span {
+  color: #ab3428;
+  font-size: 1.6rem;
+  font-weigh: bold;
+  font-family: "Montserrat", sans-serif;
+}
+main section#home div#descDiv div#apresentacao h2 a {
+  font-size: 1.6rem;
+}
+main section#home div#descDiv div#apresentacao p {
+  font-size: 1.6rem;
+  font-style: italic;
+}
+main section#home div#imgDesCont img {
+  width: 50rem;
+  height: 40rem;
+}
+main section#home div#prinProjects {
+  width: 40rem;
+  margin-top: -15rem;
+  border-radius: 0 5rem 0 5rem;
+  background-color: #3c6e71;
+}
+main section#home div#prinProjects div#title h2 {
+  color: #d9d9d9;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+main section#home div#prinProjects div#carouselExampleIndicators ol li {
+  font-size: 1.6rem;
+}
+main section#home div#prinProjects div#carouselExampleIndicators div.carousel-caption {
+  opacity: 0.95;
+  background-color: #353535;
+}
+main section#home div#prinProjects div#carouselExampleIndicators div.carousel-caption h5 {
+  color: #f49e4c;
+  font-size: 1.7rem;
+  font-family: "Montserrat", sans-serif;
+}
+main section#home div#prinProjects div#carouselExampleIndicators div.carousel-caption p {
+  color: #f49e4c;
+  font-size: 1.4rem;
+  font-style: italic;
+}
+main section#home div#prinProjects div#carouselExampleIndicators a.carousel-control-prev span.carousel-control-prev-icon {
+  font-size: 1.6rem;
+  background-color: #ab3428;
+}
+main section#home div#prinProjects div#carouselExampleIndicators a.carousel-control-next span.carousel-control-next-icon {
+  font-size: 1.6rem;
+  background-color: #ab3428;
+}
+
+footer {
+  height: 5vh;
+  background-color: #353535;
+}
+footer p#footerText {
+  color: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.scroll-to-top {
+  width: 5rem;
+  height: 5rem;
+  background-color: #ab3428;
+  color: #fff;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.scroll-to-top i {
+  font-size: 2.4rem;
+}
+
+.show-scroll {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  body {
+    background: red;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 769px) {
+  body {
+    background: greenyellow;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 481px) {
+  body {
+    background: blueviolet;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 320px) {
+  body {
+    background: fuchsia;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
