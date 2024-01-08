@@ -285,27 +285,34 @@ footer {
 // Desktop
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
   body {
-    background: red;
+    background: blue;
   }
 }
 
 // laptop
-@media screen and (min-width: 1024px) and (max-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   body {
     background: greenyellow;
   }
 }
 
 // tablet/ipad
-@media screen and (min-width: 768px) and (max-width: 481px) {
+@media screen and (max-width: 768px) and (min-width: 481px) {
   body {
     background: blueviolet;
+  }
+  div#apresentacao {
+    padding: {
+      top: 1.5rem;
+      bottom: 1.5rem;
+    }
   }
 }
 
 // mobile
-@media screen and (min-width: 480px) and (max-width: 320px) {
+@media screen and (max-width: 480px) and (min-width: 320px) {
   body {
     background: fuchsia;
   }
+  
 }
